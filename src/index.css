@@ -888,3 +888,27 @@ h3 {
   animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
   animation-fill-mode: forwards;
 }
+
+/* Card Links */
+.card-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card-link {
+  color: #a5b4fc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-link:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}

@@ -5,9 +5,10 @@ import RevealOnScroll from '../components/RevealOnScroll';
 const Projects = () => {
     const projects = [
         {
-            title: 'Amazon Clone',
-            description: 'Developed a responsive web-based project focusing on clean UI and functional design. Implemented core features using HTML, CSS, and JavaScript.',
-            link: '#' // User didn't provide a specific link yet, keeping placeholder or could use #
+            title: 'Portfolio Website',
+            description: 'A personal portfolio website designed to showcase my skills and projects. Built with React and Vite, featuring a modern, responsive design with smooth animations and interactive elements.',
+            link: '#',
+            githubLink: 'https://github.com/omjangid16/portfolio-website'
         }
     ];
 
