@@ -421,17 +421,18 @@ section {
 
 /* Skills Formatting */
 .skills-content {
+  margin-left: 70px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  width: 100%;
+  gap: 1.5rem;
+  width: 90%;
   max-width: 1200px;
   margin-top: 1.5rem;
 }
 
 .skill-category {
   text-align: left;
-  width: 100%;
+  width: 90%;
   background: rgba(255, 255, 255, 0.03);
   padding: 2rem;
   border-radius: 12px;
