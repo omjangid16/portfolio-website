@@ -8,7 +8,7 @@ const Contact = () => {
                 <h2>Get In Touch</h2>
                 <div className="contact-info">
                     <div className="contact-details">
-                        <p><strong>Email:</strong> <a href="mailto:jangidomu20052@gmail.com">jangidomu2005@gmail.com</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:jangidomu2005@gmail.com">jangidomu2005@gmail.com</a></p>
                         <p><strong>Phone:</strong> +91-92167-82857</p>
                         <p><strong>Location:</strong> Anand, Gujarat</p>
                     </div>

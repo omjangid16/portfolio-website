@@ -9,22 +9,35 @@ const Skills = () => {
                 <div className="skills-content">
                     <div className="skill-category">
                         <h3>Technical Skills</h3>
-                        <ul className="skill-list">
-                            <li><strong>Programming Languages:</strong> C, Java, OOP</li>
-                            <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
-                            <li><strong>Version Control:</strong> Git, GitHub</li>
-                            <li><strong>Tools & Editors:</strong> VS Code, Antigravity</li>
-                        </ul>
+                        <div className="skills-tags">
+                            <span className="skill-badge">HTML5</span>
+                            <span className="skill-badge">CSS</span>
+                            <span className="skill-badge">BootStrap</span>
+                            <span className="skill-badge">Javascript</span>
+                            <span className="skill-badge">React js</span>
+                            <span className="skill-badge">Rest APIs</span>
+                            <span className="skill-badge">Mongo DB</span>
+                            <span className="skill-badge">Node js</span>
+                            <span className="skill-badge">MySQL</span>
+                        </div>
+                    </div>
+                    <div className="skill-category">
+                        <h3>Tools & Editors</h3>
+                        <div className="skills-tags">
+                            <span className="skill-badge">Git/Github</span>
+                            <span className="skill-badge">VS Code</span>
+                            <span className="skill-badge">Antigravity</span>
+                        </div>
                     </div>
                     <div className="skill-category">
                         <h3>Soft Skills</h3>
-                        <ul className="skill-list">
-                            <li>Effective Communication</li>
-                            <li>Teamwork</li>
-                            <li>Time Management</li>
-                            <li>Problem Solving</li>
-                            <li>Willingness to Learn</li>
-                        </ul>
+                        <div className="skills-tags">
+                            <span className="skill-badge">Problem Solving</span>
+                            <span className="skill-badge">Communication</span>
+                            <span className="skill-badge">Team Collaboration</span>
+                            <span className="skill-badge">Continuous Learning</span>
+                            <span className="skill-badge">Debugging</span>
+                        </div>
                     </div>
                 </div>
             </RevealOnScroll>

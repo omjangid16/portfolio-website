@@ -242,11 +242,11 @@ section {
 
 /* Projects Section */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 800px;
 }
 
 .card {
@@ -420,10 +420,17 @@ section {
 }
 
 /* Skills Formatting */
+.skills-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 1.5rem;
+}
+
 .skill-category {
-  margin-bottom: 2rem;
   text-align: left;
-  max-width: 800px;
   width: 100%;
   background: rgba(255, 255, 255, 0.03);
   padding: 2rem;
@@ -438,20 +445,34 @@ section {
   font-size: 1.5rem;
 }
 
-.skill-list {
-  list-style: none;
-  padding: 0;
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
 }
 
-.skill-list li {
-  margin-bottom: 0.8rem;
-  font-size: 1.1rem;
+.skill-badge {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
   color: var(--secondary-color);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: default;
+  display: inline-block;
+  flex-grow: 1;
+  text-align: center;
 }
 
-.skill-list strong {
+.skill-badge:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #a5b4fc;
   color: #fff;
-  margin-right: 0.5rem;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 4px 15px rgba(165, 180, 252, 0.2);
 }
 
 /* Experience Timeline */
@@ -718,20 +739,6 @@ h3 {
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
-.skill-list li {
-  transition: transform 0.3s ease, color 0.3s ease;
-  padding-left: 0;
-}
-
-.skill-list li:hover {
-  transform: translateX(10px);
-  color: #fff;
-}
-
-.skill-list strong {
-  color: #a5b4fc;
-  /* Consistent accent color */
-}
 
 /* Page Load Animations */
 @keyframes fadeInUp {
